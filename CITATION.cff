@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use FP-Transformer, please cite the accompanying paper."
+title: "FP-Transformer"
+abstract: >-
+  A JAX implementation of the Fokker-Planck transformer (FPT), which samples
+  Boltzmann distributions by kernel-based Fokker-Planck ensemble transport.
+type: software
+authors:
+  - family-names: "Yu"
+    given-names: "Xiaoxuan"
+    affiliation: "Peking University"
+    email: "xiaoxuan_yu@pku.edu.cn"
+version: "0.1.0"
+license: MIT
+repository-code: "https://github.com/xiaoxuan-yu/fp-transformer"
+keywords:
+  - enhanced sampling
+  - Fokker-Planck equation
+  - kernel density estimation
+  - JAX
+preferred-citation:
+  type: article
+  title: "Exploring Boltzmann distributions via kernel-based Fokker-Planck ensemble transport"
+  authors:
+    - family-names: "Yu"
+      given-names: "Xiaoxuan"
+      affiliation: "Peking University"
+    - family-names: "Sun"
+      given-names: "Zichen"
+    - family-names: "Zhang"
+      given-names: "Jun"
+    - family-names: "Gao"
+      given-names: "Yi Qin"
+  year: 2026

@@ -1,0 +1,53 @@
+[project]
+name = "FP-Transformer"
+version = "0.1.0"
+description = "A JAX implementation of the Fokker-Planck transformer sampler."
+authors = [{ name = "Youmans Yu", email = "xiaoxuan_yu@pku.edu.cn" }]
+dependencies = [
+    "jax>=0.4.34,<0.9",
+    "numpy>=2",
+    "scipy>=1.12.0",
+    "optax>=0.2.1",
+    "tqdm>=4.66.4",
+    "tfp-nightly[jax]",
+]
+
+requires-python = ">=3.11,<3.12"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+
+
+[project.optional-dependencies]
+cuda = ["jax[cuda12]>=0.4.34,<0.9"]
+mpi = ["mpi4py>=4.1.1"]
+test = [
+    "pytest>=8.1.1",
+    "pytest-xdist>=3.5.0",
+]
+quality = ["gitlint>=0.19.1", "ruff>=0.3.3"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fp_transformer"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.uv.sources]
+tfp-nightly = { index = "pypi" }
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple/"
+explicit = true
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["E402"]
+"**/{tests,docs,tools}/*" = ["E402"]
+
+[tool.pyright]
+extraPaths = ["."]
