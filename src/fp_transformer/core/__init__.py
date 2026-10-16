@@ -13,6 +13,15 @@ __all__ = [
     "BaseSystem",
     "EnergySystem",
     "ForceSystem",
+    "AmberSystem",
     "Topology",
     "CoordTopology",
 ]
+
+
+def __getattr__(name):
+    if name == "AmberSystem":
+        from .system import AmberSystem as _AmberSystem
+
+        return _AmberSystem
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")

@@ -24,7 +24,7 @@ from .periodic_multidim import (
     PotentialParameters,
     init_params_by_nearest_ci,
 )
-from .minimization import minimize_with_energy_fn
+from .minimization import minimize_with_amber_system, minimize_with_energy_fn
 
 # get sharding
 
@@ -73,5 +73,6 @@ __all__ = [
     "any_nan_in_tree",
     "PotentialParameters",
     "dist_mat_to_gaussian_kernel_exp",
+    "minimize_with_amber_system",
     "minimize_with_energy_fn",
 ]

@@ -5,6 +5,7 @@ from .Periodic import Periodic
 from .PeriodicMultidim import PeriodicMultidim
 from .hidim_periodic import HiDimPeriodic
 from .periodic_sin4 import PeriodicSin4
+from .GAFF import GAFF
 from .GMMBias import GMMBiasPotential
 from .SumPotential import SumPotential
 from .Vina import (
@@ -22,6 +23,8 @@ __all__ = [
     "PeriodicMultidim",
     "HiDimPeriodic",
     "PeriodicSin4",
+    "GAFF",
+    "AmberPotential",
     "ECEPPPotential",
     "GMMBiasPotential",
     "SumPotential",
@@ -33,6 +36,11 @@ __all__ = [
 
 
 def __getattr__(name):
+    if name == "AmberPotential":
+        # Lazy import avoids loading OpenMM/CUDA plugins unless AmberPotential is used.
+        from .Amber import AmberPotential as _AmberPotential
+
+        return _AmberPotential
     if name == "ECEPPPotential":
         from ..ecepp import ECEPPPotential as _ECEPPPotential
 

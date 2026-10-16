@@ -31,6 +31,7 @@ __all__ = [
     "BaseSystem",
     "EnergySystem",
     "ForceSystem",
+    "AmberSystem",
     "ECEPPPotential",
     "Topology",
     "CoordTopology",
@@ -38,6 +39,10 @@ __all__ = [
 
 
 def __getattr__(name):
+    if name == "AmberSystem":
+        from .core import AmberSystem as _AmberSystem
+
+        return _AmberSystem
     if name == "ECEPPPotential":
         from .ecepp import ECEPPPotential as _ECEPPPotential
 

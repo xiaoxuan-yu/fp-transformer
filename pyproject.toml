@@ -21,6 +21,8 @@ license-files = ["LICENSE"]
 [project.optional-dependencies]
 cuda = ["jax[cuda12]>=0.4.34,<0.9"]
 mpi = ["mpi4py>=4.1.1"]
+# Molecular systems: Amber force field via jax-md and OpenMM topology input.
+md = ["jax-md", "openmm>=8.3.1,<8.4"]
 test = [
     "pytest>=8.1.1",
     "pytest-xdist>=3.5.0",
@@ -39,6 +41,7 @@ pythonpath = ["src"]
 
 [tool.uv.sources]
 tfp-nightly = { index = "pypi" }
+jax-md = { git = "https://gitee.com/youmans-yu/jax-md/", branch = "amber" }
 
 [[tool.uv.index]]
 name = "pypi"
