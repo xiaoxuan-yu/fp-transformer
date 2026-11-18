@@ -21,6 +21,8 @@ license-files = ["LICENSE"]
 [project.optional-dependencies]
 cuda = ["jax[cuda12]>=0.4.34,<0.9"]
 mpi = ["mpi4py>=4.1.1"]
+# Plotting and analysis used by the paper examples.
+examples = ["matplotlib>=3.9", "scikit-learn>=1.5"]
 test = [
     "pytest>=8.1.1",
     "pytest-xdist>=3.5.0",

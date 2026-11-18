@@ -5,4 +5,6 @@ __pycache__/
 .pytest_cache/
 # Released data and regenerated figures live outside version control.
 /data/
+/examples/ala10/data/
+/examples/vina/data/
 /figures/
