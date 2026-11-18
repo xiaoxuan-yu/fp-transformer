@@ -28,7 +28,7 @@ from examples.common.figure_style import (
 )
 
 
-DATA_ROOT = Path("data")  # released data, relative to the repository root
+DATA_ROOT = Path("data")  # simulation outputs written by the run commands
 FIGURE_ROOT = Path("figures")
 DEFAULT_DATA = (
     DATA_ROOT

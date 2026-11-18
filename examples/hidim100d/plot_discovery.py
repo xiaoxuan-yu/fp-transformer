@@ -34,7 +34,7 @@ from examples.common.figure_style import (
 )
 from examples.common.identification import identification, split_half_probability
 
-DATA_ROOT = Path("data")  # released data, relative to the repository root
+DATA_ROOT = Path("data")  # simulation outputs written by the run commands
 FIGURE_ROOT = Path("figures")
 DEFAULT_OUTPUT = FIGURE_ROOT / "hidim_discovery"
 DEFAULT_100D_DATA = DATA_ROOT / "numerical_hidim_periodic_discovery" / "tuned"

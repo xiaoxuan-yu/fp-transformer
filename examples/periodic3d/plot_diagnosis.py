@@ -51,7 +51,7 @@ from examples.common.figure_style import (
 )
 from examples.common.identification import equilibrium_identification, identification
 
-DATA_ROOT = Path("data")  # released data, relative to the repository root
+DATA_ROOT = Path("data")  # simulation outputs written by the run commands
 FIGURE_ROOT = Path("figures")
 DATA = DATA_ROOT / "numerical_lowdim"
 DEFAULT_OUTPUT = FIGURE_ROOT / "periodic_diagnosis"

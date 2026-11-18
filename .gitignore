@@ -3,7 +3,7 @@ __pycache__/
 *.egg-info/
 .venv/
 .pytest_cache/
-# Released data and regenerated figures live outside version control.
+# Input data, simulation outputs and regenerated figures live outside version control.
 /data/
 /examples/ala10/data/
 /examples/vina/data/

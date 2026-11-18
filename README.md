@@ -54,19 +54,20 @@ This branch is the version used for the paper; development continues on
 
 ## Data
 
-Input files and simulation data are not stored in this repository; they are
-archived in a separate Zenodo dataset linked from the Zenodo record of the
-release. Extracted at the repository root, the archives provide
+Input files are not stored in this repository; they are archived in the
+Zenodo dataset [10.5281/zenodo.24341787](https://doi.org/10.5281/zenodo.24341787). Extracted at the repository
+root, the archive provides
 
 - `examples/ala10/data`: the ECEPP/3 system and canonical Monte Carlo
   reference for NH2-(Ala)10-COOH, exported from SMMP;
 - `examples/vina/data`: the PoseBusters Benchmark journal subset and the
   prepared receptor–ligand pairs (from Zenodo record
   [8278563](https://zenodo.org/records/8278563), CC-BY 4.0; M. Buttenschoen,
-  G. M. Morris, and C. M. Deane, *Chem. Sci.* **15**, 3130 (2024));
-- `data/`: the simulation outputs read by the analysis and plotting scripts.
+  G. M. Morris, and C. M. Deane, *Chem. Sci.* **15**, 3130 (2024)).
 
-The canonical reference and the Vina inputs can also be regenerated with
+The simulation commands in each example README write their outputs under
+`data/`, from which the analysis and plotting scripts regenerate all reported
+figures and tables. The canonical reference and the Vina inputs can also be regenerated with
 `examples.ala10.run_mc_reference` and `examples.vina.download_dataset` /
 `examples.vina.prepare_dataset`.
 

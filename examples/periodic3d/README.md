@@ -51,5 +51,5 @@ python -m examples.periodic3d.plot_endpoint_continuation
 In the output files the Langevin baseline is keyed `ula` (unadjusted
 Langevin algorithm, i.e. Euler--Maruyama), and the suffix `_fixed` marks the
 fixed target temperature. GPU reductions are not bitwise deterministic, so
-long explicit-Euler runs reproduce the released data statistically rather
+long explicit-Euler runs reproduce the reported numbers statistically rather
 than bit for bit.
