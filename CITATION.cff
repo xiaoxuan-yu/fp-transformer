@@ -10,6 +10,7 @@ authors:
     given-names: "Xiaoxuan"
     affiliation: "Peking University"
     email: "xiaoxuan_yu@pku.edu.cn"
+    orcid: "https://orcid.org/0009-0003-1801-5462"
 version: "0.1.0"
 license: MIT
 repository-code: "https://github.com/xiaoxuan-yu/fp-transformer"
@@ -32,3 +33,17 @@ preferred-citation:
     - family-names: "Gao"
       given-names: "Yi Qin"
   year: 2026
+references:
+  - type: dataset
+    title: "Input data for: Exploring Boltzmann distributions via kernel-based Fokker-Planck ensemble transport"
+    authors:
+      - family-names: "Yu"
+        given-names: "Xiaoxuan"
+      - family-names: "Sun"
+        given-names: "Zichen"
+      - family-names: "Zhang"
+        given-names: "Jun"
+      - family-names: "Gao"
+        given-names: "Yi Qin"
+    doi: "10.5281/zenodo.24341787"
+    year: 2026
