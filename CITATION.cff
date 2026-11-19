@@ -32,6 +32,9 @@ preferred-citation:
       given-names: "Jun"
     - family-names: "Gao"
       given-names: "Yi Qin"
+  journal: "ChemRxiv"
+  doi: "10.26434/chemrxiv.15012462/v1"
+  url: "https://doi.org/10.26434/chemrxiv.15012462/v1"
   year: 2026
 references:
   - type: dataset

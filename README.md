@@ -78,6 +78,8 @@ figures and tables. The canonical reference and the Vina inputs can also be rege
   title  = {Exploring {Boltzmann} distributions via kernel-based
             {Fokker--Planck} ensemble transport},
   author = {Yu, Xiaoxuan and Sun, Zichen and Zhang, Jun and Gao, Yi Qin},
+  howpublished = {ChemRxiv},
+  doi    = {10.26434/chemrxiv.15012462/v1},
   year   = {2026}
 }
 ```
